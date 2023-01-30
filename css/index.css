@@ -616,11 +616,15 @@ justify-content: space-between;}
 
 /* ----반응형---- */
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1020px){
     /* 헤더 */
     .header .util-con ul li{display: none;}
     .header .util-con ul li:nth-child(3) {display: block; margin-right: 20px;}
     .header .util-con ul li:nth-child(4) { margin-right: 60px;}
+    .header .nav {width: 100%;}
+    .header .submenu ul li a{font-size: 14px;}
+    .header .submenu ul {margin-left: -15px;}
+    
 
 
     /* 배너 */
