@@ -48,6 +48,7 @@ a{color: #000; text-decoration: none;}
     font-size: 13px; 
     color: #666;}
 .header .util-con ul li:nth-child(2){margin: 0 20px;}
+.header .util-con ul li:nth-child(3){display: none;}
 .util-con i{font-size: 15px;}
 /* .util-con ul li:nth-child(4) i{display: none;} */
 .header .nav{
@@ -206,6 +207,7 @@ a{color: #000; text-decoration: none;}
     background-color: rgb(212, 45, 73); 
 }
 
+.mobile{display: none;}
 
 
 /* ----------------------베스트------------------------------- */
@@ -611,7 +613,7 @@ justify-content: space-between;}
 
 /* ----반응형---- */
 
-@media screen and (max-width:1200px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
     /* 헤더 */
     .header .util-con ul li{display: none;}
     .header .util-con ul li:nth-child(3) {display: block; margin-right: 20px;}
@@ -746,7 +748,7 @@ justify-content: space-between;}
     
     .brows .background2 .brows-wrap{display: flex; justify-content: space-between; }
     
-    .brows .background2 .model{margin-left: 100px;}
+    .brows .background2 .model{margin-left: 150px;margin-right: -50px;}
     .brows .background2 .model img{width: 326px;}
     .brows .background2 .left{ text-align: center; margin-left: -400px;}
     .brows .background2 .left .product-brows{display: flex; }
@@ -809,23 +811,44 @@ justify-content: space-between;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* 태블릿 */
 
+}
+@media screen and (max-width: 767px) {
+    .header{border-top: 0px solid #000; height: 89px; }
+    .header::after, .header::before{
+        display: none;
+    }
+    .header-wrap{
+        max-width: 700px;
+        height: 100%;
+        bottom: 10px;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .header .util-con ul li:nth-child(1),
+    .header .util-con ul li:nth-child(2),
+    .header .util-con ul li:nth-child(3)
+    {display: none;}
+    .header .util-con{top: 50%;}
+    .header .util-con ul li i{ font-size: 25px;}
+    .header .nav{display: none;}
+
+
+/* 배너 */
+
+    .banner-slide .swiper-wrapper .swiper-slide{display: none;}
+    .mobile-banner-slide{width: 100%;}
+    .mobile-banner-slide .swiper-wrapper{max-width: 767px;}
+
+
+
+
+
+
+
+    .best .swiper-button-next,
+    .best .swiper-button-prev{display: none;}
+    /* 모바일 */
 }
