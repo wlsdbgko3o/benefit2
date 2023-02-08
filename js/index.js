@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    AOS.init();
 
     const swiper = new Swiper(" .swiper.banner-slide",{
         autoplay: {
